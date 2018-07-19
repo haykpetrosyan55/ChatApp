@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.ChatFragment">
+
+    <TextView
+        android:id="@+id/userNameChatID"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size35dp"
+        android:background="@color/chat_fragment_back_color"
+        android:gravity="center"
+        android:text="@string/userName"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/textSize25sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chat_listID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeID"
+        android:layout_below="@+id/userNameChatID">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/relativeID"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/chat_fragment_back_color">
+
+        <Button
+            android:id="@+id/plusButton"
+            android:layout_width="@dimen/size50dp"
+            android:layout_height="@dimen/size50dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_plus" />
+
+        <EditText
+            android:id="@+id/edit_textID"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/plusButton"
+            android:layout_toStartOf="@+id/sendButtonID"
+            android:background="@drawable/edit_text_back"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
+
+        <Button
+            android:id="@+id/sendButtonID"
+            android:layout_width="@dimen/size50dp"
+            android:layout_height="@dimen/size50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_send" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

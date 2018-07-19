@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Chat App</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="userAnswer">Բարլուս Ձեզ․․․․ \n Սաղ կայֆոտ ա՞՞՞</string>
+    <string name="title_activity_messanger">MessangerActivity</string>
+    <string name="skipText">SKIP</string>
+    <string name="userName">User Name</string>
+    <string name="myPhoneNumber">055050029</string>
+    <string name="tel">Tel.</string>
+    <string name="myEmail">www.hayk5555@list.ru</string>
+    <string name="email">email.</string>
+    <string name="user_description">USER DESCRIPTION</string>
+    <string name="description">Description</string>
+    <string name="phone_number">phone Number:</string>
+    <string name="email_text">eMail:</string>
+    <string name="status">status:</string>
+    <string name="online">Online</string>
+    <string name="hero_name">Hero Name</string>
+    <string name="todo">TODO</string>
+    <string name="receive_message">receive message</string>
+    <string name="my_message">my message</string>
+</resources>

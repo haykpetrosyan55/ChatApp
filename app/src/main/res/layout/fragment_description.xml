@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".fragments.DescriptionFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0dp"
+        android:layout_weight="7"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/size2dp"
+            android:text="@string/user_description"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/textSize25sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/descriptionImageID"
+            android:layout_width="@dimen/size150dp"
+            android:layout_height="@dimen/size150dp"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/smile" />
+
+        <TextView
+            android:id="@+id/descriptionUserNameID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/descriptionImageID"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/size5dp"
+            android:text="@string/userName"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/textSize30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/descriptionTextID"
+            android:layout_width="@dimen/size300dp"
+            android:layout_height="@dimen/size150dp"
+            android:layout_below="@+id/descriptionUserNameID"
+            android:layout_centerHorizontal="true"
+            android:text="@string/description"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/textSize15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/phoneID"
+            android:layout_width="@dimen/size55dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/phone_number"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/userPhoneDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_toEndOf="@+id/phoneID"
+            android:layout_toStartOf="@+id/callButton"
+            android:gravity="center_vertical"
+            android:text="@string/myPhoneNumber"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/textSize25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/callButton"
+            android:layout_width="@dimen/size50dp"
+            android:layout_height="@dimen/size50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_call_blue_24dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="@dimen/size55dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/email_text"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/emailID"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/size2dp"
+            android:layout_toEndOf="@+id/email"
+            android:layout_toStartOf="@id/emailButtonID"
+            android:gravity="center_vertical"
+            android:text="@string/myEmail"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/textSize20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/emailButtonID"
+            android:layout_width="@dimen/size50dp"
+            android:layout_height="@dimen/size50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_email_blue_24dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/statusID"
+            android:layout_width="@dimen/size55dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/status"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/size20dp"
+            android:layout_toEndOf="@+id/statusID"
+            android:gravity="center_vertical"
+            android:text="@string/online"
+            android:textColor="@color/greenColor"
+            android:textSize="@dimen/textSize25sp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+</LinearLayout>

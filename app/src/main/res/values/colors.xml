@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#667cf3</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black_color">#000000</color>
+    <color name="chat_fragment_back_color">#bce2ff</color>
+    <color name="redColor">#ff0000</color>
+    <color name="pinkColor">#c700c7</color>
+    <color name="orangeColor">#ffa04a</color>
+    <color name="whiteColor">#ffffff</color>
+    <color name="greenColor">#1db315</color>
+    <color name="messageColor">#a5ef7f</color>
+    <color name="blueBack">#3d97f7</color>
+    <color name="greenColor100">#00ff00</color>
+</resources>
